@@ -2,8 +2,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Link from "next/link";
 import { db } from "~/server/db";
+
+export const dynamic = "force-dynamic";
 
 const mockExtractions = [
   { id: 1, name: "Extraction 1", description: "Description 1", defaults: { enrich: false, merge: false }, template: "" },
@@ -16,6 +17,8 @@ const mockExtractions = [
   { id: 8, name: "Extraction 8", description: "Description 8", defaults: { enrich: false, merge: false }, template: "" },
   { id: 9, name: "Extraction 9", description: "Description 9", defaults: { enrich: false, merge: false }, template: "" },
 ];
+
+
 export default async function HomePage() {
   const posts = await db.query.posts.findMany();
   console.log(posts);
