@@ -18,11 +18,12 @@ import {
  */
 export const createTable = pgTableCreator((name) => `ingecta-web-1_${name}`);
 
-export const posts = createTable(
-  "post",
+export const extractions = createTable(
+  "extraction",
   {
     id: integer("id").primaryKey().generatedByDefaultAsIdentity(),
-    name: varchar("name", { length: 256 }),
+    name: varchar("name", { length: 100 }).notNull(),
+    description: varchar("description", { length: 256 }),
     createdAt: timestamp("created_at", { withTimezone: true })
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
