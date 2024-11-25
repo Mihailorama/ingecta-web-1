@@ -20,7 +20,7 @@ A powerful web scraping application that allows you to extract structured JSON d
 
 ### TODO
 
-- [ ] Make it deploy (vercel)
+- [x] Make it deploy (vercel)
 - [ ] Add basic UI with mock data
 - [ ] Setup a database (supabase)
 - [ ] Attach database to the UI
@@ -32,6 +32,7 @@ A powerful web scraping application that allows you to extract structured JSON d
 - [ ] Add actual extraction of the data
 - [ ] Add exporting the extracted data in CSV and JSON formats
 - [ ] Add Analytics (posthog)
+- [ ] Add templates for the JSON schemas (e.g. for the websites with the tables) with the ability to copy and use and edit them
 - [ ] Add API access and API_KEYs for the users
 - [ ] Add rate limiting (upstash)
 - [ ] Add cron jobs for scheduled extractions (optional)
