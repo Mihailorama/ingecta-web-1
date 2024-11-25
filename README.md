@@ -22,6 +22,7 @@ A powerful web scraping application that allows you to extract structured JSON d
 
 - [x] Make it deploy (vercel)
 - [ ] Add basic UI with mock data
+- [ ] Adjust build config
 - [ ] Setup a database (supabase)
 - [ ] Attach database to the UI
 - [ ] Add auth (clerk)
