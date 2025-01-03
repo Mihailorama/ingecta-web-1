@@ -21,11 +21,11 @@ A powerful web scraping application that allows you to extract structured JSON d
 ### TODO
 
 - [x] Make it deploy (vercel)
-- [ ] Add basic UI with mock data
-- [ ] Adjust build config
-- [ ] Setup a database (supabase)
-- [ ] Attach database to the UI
-- [ ] Add auth (clerk)
+- [x] Add basic UI with mock data
+- [x] Adjust build config
+- [x] Setup a database (neondb)
+- [x] Attach database to the UI
+- [x] Add auth (clerk)
 - [ ] Add creation of the JSON schemas
 - [ ] Add error handling (sentry)
 - [ ] Add UI to view, edit and delete the JSON schemas

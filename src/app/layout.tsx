@@ -12,6 +12,10 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
+if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
+  throw new Error("Missing NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY");
+}
+
 export const metadata: Metadata = {
   title: "Web Data Extractor",
   description: "Extract data from websites to the structured tables and JSON",
